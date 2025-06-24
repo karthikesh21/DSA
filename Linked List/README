@@ -1,1 +1,83 @@
+# 🔗 Singly Linked List in Java
 
+## 📘 What is a Linked List?
+
+A **Linked List** is a linear data structure where elements are stored in nodes. Each node contains:
+- A `data` field storing the value
+- A `next` reference pointing to the next node in the sequence
+
+Unlike arrays, linked lists do **not** store elements in contiguous memory blocks, which allows for efficient insertions and deletions.
+
+---
+
+## 🛠️ Linked List Representation in Java
+
+```java
+// Node class
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+🖼️ Visual Representation
+For a linked list: 10 -> 20 -> 30 -> null
+
+Each node is:
+
+css
+Copy
+Edit
+[10 | o ] -> [20 | o ] -> [30 | null]
+Each block contains data | next.
+
+💡 Real-World Use Cases
+Application	Description
+Music Playlist	Each song points to the next
+Browser History	Back/forward navigation using linked nodes
+Undo/Redo Feature	Actions stored in a linked list
+Task Scheduling (OS)	Processes in a queue
+LRU Cache	Efficient eviction using a doubly linked list
+
+📈 Advantages
+✅ Dynamic size (no need to pre-define size)
+
+✅ Efficient insert/delete at head/tail (O(1) if pointer is known)
+
+✅ Great for memory-constrained systems
+
+⚠️ Disadvantages
+❌ No random access (O(n) traversal)
+
+❌ Extra memory for pointers
+
+❌ Not cache-friendly like arrays
+
+🧪 Sample Usage
+java
+Copy
+Edit
+public class Main {
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        list.append(10);
+        list.append(20);
+        list.append(30);
+
+        list.printList();  // Output: 10 -> 20 -> 30 -> null
+    }
+}
+📚 Summary
+Linked Lists are foundational data structures in computer science, widely used in real-world applications where dynamic memory allocation, efficient insertions/deletions, and flexibility are key.
+
+🚀 Extensions
+Doubly Linked List
+
+Circular Linked List
+
+Loop detection (Floyd’s algorithm or HashSet)
+
+Java’s built-in java.util.LinkedList<E>
