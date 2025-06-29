@@ -1,0 +1,61 @@
+📘 What are Sorting Algorithms?
+
+Sorting algorithms are techniques used to rearrange elements in a list or array into a specific order — usually ascending or descending. They are essential in computer science for organizing data efficiently, improving search performance, and simplifying complex tasks.
+
+
+---
+
+💡 Why Use Sorting Algorithms?
+
+🔍 Faster Searching: Binary search works only on sorted data.
+
+🧠 Easier Analysis: Sorted data helps in finding patterns or duplicates.
+
+💾 Efficient Storage: Sorted structures can be compressed better.
+
+🛒 Real-World Use: Sorting prices, names, marks, scores, etc.
+
+
+
+---
+
+🔢 Types of Sorting Algorithms
+
+Algorithm	Method	Time Complexity (Avg)	Stable	In-Place
+
+Bubble Sort	Repeated swapping	O(n²)	✅ Yes	✅ Yes
+Selection Sort	Minimum selection	O(n²)	❌ No	✅ Yes
+Insertion Sort	Incremental sorting	O(n²)	✅ Yes	✅ Yes
+Merge Sort	Divide and conquer	O(n log n)	✅ Yes	❌ No
+Quick Sort	Divide and conquer	O(n log n)	❌ No	✅ Yes
+Heap Sort	Heap structure	O(n log n)	❌ No	✅ Yes
+Counting Sort	Frequency counting	O(n + k)	✅ Yes	❌ No
+Radix Sort	Digit-by-digit sort	O(nk)	✅ Yes	❌ No
+
+
+
+---
+
+🎯 Classification
+
+Comparison-based: Bubble, Insertion, Merge, Quick, Heap
+
+Non-comparison-based: Counting, Radix, Bucket
+
+Stable Sorts: Maintain original order of equal elements
+
+Unstable Sorts: May change order of equal elements
+
+
+
+---
+
+🌍 Real-world Applications
+
+🔢 Sorting marks, names, or products
+
+🛒 E-commerce filters (e.g. Price: Low to High)
+
+📊 Data visualization and analysis
+
+🧭 Pathfinding and graph algorithms
