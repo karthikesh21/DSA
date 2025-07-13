@@ -23,27 +23,27 @@ public class Main {
         int[] a = new int[n];
         int[] b = new int[m];
         int[] c = new int[p];
-        List<Integer> v = new ArrayList<>();
+        int[] merged = new int[n + m + p];
 
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
-            v.add(a[i]);
+            merged[i] = a[i];
         }
 
         for (int i = 0; i < m; i++) {
             b[i] = sc.nextInt();
-            v.add(b[i]);
+            merged[n + i] = b[i];
         }
 
         for (int i = 0; i < p; i++) {
             c[i] = sc.nextInt();
-            v.add(c[i]);
+            merged[n + m + i] = c[i];
         }
 
-        Collections.sort(v);
+        Arrays.sort(merged);
 
-        for (int val : v) {
-            System.out.print(val + " ");
+        for (int i = 0; i < merged.length; i++) {
+            System.out.print(merged[i] + " ");
         }
     }
 }
